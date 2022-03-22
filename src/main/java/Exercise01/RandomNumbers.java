@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class RandomNumbers {
+    ArrayList<ArrayList<Integer>> listOfAllArrays = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
 
     public void go() {
         while (true) {
             ArrayList<Integer> arrayOfRandomNumbers = getArrayOfRandomNumbers();
+            listOfAllArrays.add(arrayOfRandomNumbers);
+            //System.out.println("list of all arrays: "+ listOfAllArrays);
         }
     }
 
@@ -24,3 +27,4 @@ public class RandomNumbers {
     }
 
 }
+
