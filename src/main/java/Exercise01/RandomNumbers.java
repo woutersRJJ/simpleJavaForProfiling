@@ -19,8 +19,19 @@ public class RandomNumbers {
         for (int i = 0; i < length; i++) {
             numbers.add((int) (Math.random() * 100));
         }
-        System.out.println("new array: "+ numbers);
+        printArrayV1(numbers);
+        printArrayV2(numbers);
         return numbers;
+    }
+
+    private void printArrayV1(ArrayList<Integer> numbers) {
+        System.out.println("new array: "+ numbers);
+    }
+
+    private void printArrayV2(ArrayList<Integer> numbers) {
+        for (int number: numbers)
+            System.out.print(number+", ");
+        System.out.println("");
     }
 
 }
