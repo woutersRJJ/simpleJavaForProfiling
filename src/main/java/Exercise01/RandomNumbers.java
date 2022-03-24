@@ -14,7 +14,7 @@ public class RandomNumbers {
 
     private ArrayList<Integer> getArrayOfRandomNumbers() {
         ArrayList<Integer> numbers = new ArrayList<>();
-        System.out.println("how many numbers in this array? ");
+        //System.out.println("how many numbers in this array? ");
         int length = sc.nextInt();
         for (int i = 0; i < length; i++) {
             numbers.add((int) (Math.random() * 100));
