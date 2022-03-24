@@ -19,8 +19,8 @@ public class RandomNumbers {
         for (int i = 0; i < length; i++) {
             numbers.add((int) (Math.random() * 100));
         }
-        printArrayV1(numbers);
-        printArrayV2(numbers);
+       /* printArrayV1(numbers);
+        printArrayV2(numbers);*/
         return numbers;
     }
 
